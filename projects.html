@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kirill Knyazev</title>
+    <link rel="icon" type="image/x-icon" href="noto--green-apple.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body class="container-fluid">
+    <header>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Experience</a>
+    </header>
+    <section>
+      <h1>Education</h1>
+      <div class="card flex-row m-2" id="abbott">
+        <div class="image">
+          <img src="abbott.jpeg">
+        </div>
+        <div class="d-flex flex-column w-100 p-3">
+          <h3 class="d-flex justify-content-between align-items-center title m-0">John Abbott College<span class="fs-5">2024-2025</span></h3>
+          <h1>Full-Stack Developer - AEC</h1>
+        </div>
+      </div>
+      <div class="card flex-row m-2" id="andre">
+        <div class="image">
+          <img src="andre.jpeg">
+        </div>
+        <div class="d-flex flex-column w-100 p-3">
+          <h3 class="d-flex justify-content-between align-items-center title m-0">Cegep André-Laurendeau<span class="fs-5">2021-2023</span></h3>
+          <h1>Pure and Applied Sciences - DEC</h1>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h1>Projects</h1>
+      <div class="card flex-row m-2" id="clonify">
+        <div class="image">
+          <img src="clonify.svg">
+        </div>
+        <div class="d-flex flex-column w-100 p-3">
+          <h3 class="d-flex justify-content-between align-items-center title m-0">Clonify</h3>
+          <h1>Spotify Clone</h1>
+        </div>
+      </div>
+      <div class="card flex-row m-2" id="carnet">
+        <div class="image">
+          <img src="icons/spring.png">
+        </div>
+        <div class="d-flex flex-column w-100 p-3">
+          <h3 class="d-flex justify-content-between align-items-center title m-0">CarNet</h3>
+          <h1>Car Sales Web App</h1>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+      $(document).ready(()=>{
+        $("#abbott").click(() => {
+          window.location.href="https://continuingeducation.johnabbott.qc.ca/programs/full-stack-developer/";
+        });
+
+        $("#andre").click(()=>{
+          window.location.href="https://claurendeau.qc.ca/programmes/explorez-nos-programmes/sciences-de-la-nature";
+        })
+        $("#carnet").click(()=>{
+          window.location.href="https://github.com/hdcola/autotrader";
+        })
+        $("#clonify").click(()=>{
+          window.location.href="https://clonify-front-b9abe0286edf.herokuapp.com";
+        })
+      })
+    </script>
+  </body>
+</html>
